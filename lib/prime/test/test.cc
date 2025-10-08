@@ -46,6 +46,9 @@ TEST(TEST_Prime, last){
 
 TEST(TEST_Prime, preprocess){
     Prime prime;
+    prime.preprocess(0);
+    prime.preprocess(1);
+    prime.preprocess(2);
     prime.preprocess(400);
     EXPECT_EQ(*prime.last(), 397);
     prime.preprocess(450);

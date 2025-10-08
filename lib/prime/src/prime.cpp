@@ -42,7 +42,7 @@ bool Prime::checkPrime(Prime::value_type number) {
 }
 
 void Prime::preprocess(Prime::value_type max) {
-    if (max%2 == 0)
+    if (max%2 == 0 && max > 2)
         --max;
     while (max > maxTested_) {
         maxTested_ += 2;
